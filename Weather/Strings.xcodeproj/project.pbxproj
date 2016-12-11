@@ -12,6 +12,7 @@
 		E3A330341DF8F460000FFA03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A330321DF8F460000FFA03 /* Main.storyboard */; };
 		E3A330361DF8F460000FFA03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3A330351DF8F460000FFA03 /* Assets.xcassets */; };
 		E3A330391DF8F460000FFA03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3A330371DF8F460000FFA03 /* LaunchScreen.storyboard */; };
+		E3A330611DFCDC61000FFA03 /* rmnadojnfjs-todd-quackenbush.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E3A330601DFCDC61000FFA03 /* rmnadojnfjs-todd-quackenbush.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		E3A330351DF8F460000FFA03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3A330381DF8F460000FFA03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3A3303A1DF8F460000FFA03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3A330601DFCDC61000FFA03 /* rmnadojnfjs-todd-quackenbush.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "rmnadojnfjs-todd-quackenbush.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			children = (
 				E3A3302D1DF8F460000FFA03 /* Strings */,
 				E3A3302C1DF8F460000FFA03 /* Products */,
+				E3A330601DFCDC61000FFA03 /* rmnadojnfjs-todd-quackenbush.jpg */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +126,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3A330611DFCDC61000FFA03 /* rmnadojnfjs-todd-quackenbush.jpg in Resources */,
 				E3A330391DF8F460000FFA03 /* LaunchScreen.storyboard in Resources */,
 				E3A330361DF8F460000FFA03 /* Assets.xcassets in Resources */,
 				E3A330341DF8F460000FFA03 /* Main.storyboard in Resources */,
@@ -297,6 +301,7 @@
 				E3A3303F1DF8F460000FFA03 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
