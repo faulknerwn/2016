@@ -15,7 +15,6 @@ class ViewController: UIViewController {
         activeGame = true
         activePlayer = 1 // 1 is noughts, 2 is crosses
         gameState = [0,0,0,0,0,0,0,0,0]
-        var button: UIButton
         
         for i in 1..<10 {
             if let  button = view.viewWithTag(i) as? UIButton {
@@ -23,7 +22,9 @@ class ViewController: UIViewController {
             }
             winnerLabel.isHidden = true
             playAgainButton.isHidden = true
-            
+            winnerLabel.center = CGPoint(x: winnerLabel.center.x - 500, y: winnerLabel.center.y)
+            playAgainButton.center = CGPoint(x: playAgainButton.center.x - 500, y:playAgainButton.center.y)
+
         }
         
     }
