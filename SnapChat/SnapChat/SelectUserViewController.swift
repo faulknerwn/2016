@@ -7,19 +7,39 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
 
 class SelectUserViewController: UIViewController,  UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var tableView: UITableView!
     
-    
+    var users : [User] = []
+    var imageURL = ""
+    var descript = ""
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return users.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
+        let cell = UITableViewCell()
+        let user = users[indexPath.row]
+        cell.textLabel?.text = user.email
+       
+        return cell
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let user = users[indexPath.row]
+
+        let snap = ["from":user.email, "description":descript,"imageURL":imageURL]
+       
+        FIRDatabase.database().reference().child("users").child(user.uid).child("snaps").childByAutoId().setValue(snap)
+        
+        
     }
     
     override func viewDidLoad() {
@@ -27,6 +47,21 @@ class SelectUserViewController: UIViewController,  UITableViewDelegate, UITableV
 
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        
+        FIRDatabase.database().reference().child("users").observe(FIRDataEventType.childAdded, with: {(snapshot) in
+           
+            
+            let user = User()
+        
+            user.email = snapshot.childSnapshot(forPath:"email").value as! String
+            user.uid = snapshot.key
+            
+            
+            self.users.append(user)
+            self.tableView.reloadData()
+        
+        
+        })
         // Do any additional setup after loading the view.
     }
 

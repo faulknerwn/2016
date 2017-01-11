@@ -79,7 +79,7 @@
         <!--Snaps View Controller-->
         <scene sceneID="s2f-HD-Leg">
             <objects>
-                <viewController id="60w-fb-WG8" customClass="SnapsViewController" customModule="SnapChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="60w-fb-WG8" customClass="SnapsViewController" customModule="SnapChat" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YM3-JB-Pvl"/>
                         <viewControllerLayoutGuide type="bottom" id="1JB-8c-sIj"/>
@@ -87,7 +87,29 @@
                     <view key="view" contentMode="scaleToFill" id="ZuE-0p-XEb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m57-De-0Ep">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="uvV-3m-x0V">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uvV-3m-x0V" id="2tF-ZB-YoE">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1JB-8c-sIj" firstAttribute="top" secondItem="m57-De-0Ep" secondAttribute="bottom" id="Kwu-Zu-U03"/>
+                            <constraint firstAttribute="trailing" secondItem="m57-De-0Ep" secondAttribute="trailing" id="Ody-OF-bH4"/>
+                            <constraint firstItem="m57-De-0Ep" firstAttribute="top" secondItem="YM3-JB-Pvl" secondAttribute="bottom" id="a3a-hG-BEX"/>
+                            <constraint firstItem="m57-De-0Ep" firstAttribute="leading" secondItem="ZuE-0p-XEb" secondAttribute="leading" id="qud-QZ-Ed7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="E7R-Ox-jlb">
                         <barButtonItem key="leftBarButtonItem" title="Logout" id="bgw-5M-Sl2">
@@ -101,6 +123,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="m57-De-0Ep" id="D4t-t1-XIW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bMk-Q4-uzO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

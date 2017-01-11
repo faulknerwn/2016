@@ -40,8 +40,7 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
     @IBAction func nextTapped(_ sender: Any) {
         
         nextButton.isEnabled = false
-        performSegue(withIdentifier: "selectUserSegue", sender: nil)
-        let imagesFolder = FIRStorage.storage().reference().child("images")
+               let imagesFolder = FIRStorage.storage().reference().child("images")
         let imageData = UIImageJPEGRepresentation(imageView.image!, 0.1)! //0.1 is compression
         
         //UU generates random string
@@ -52,14 +51,20 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
                 print("We had an error:\(error)")
                 
             } else {
-                print(metadata?.downloadURL())
-                self.performSegue(withIdentifier: "selectUserSegue", sender: nil)
+                print("metadata line",metadata?.downloadURL())
+                self.performSegue(withIdentifier: "selectUserSegue", sender: metadata!.downloadURL()!.absoluteString)
             }
         })
 
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         //images is folder on firebase server
+        
+        let nextVC = segue.destination as! SelectUserViewController
+        
+        nextVC.imageURL = sender as! String
+        nextVC.descript = textField.text!
+        
         
     }
         
