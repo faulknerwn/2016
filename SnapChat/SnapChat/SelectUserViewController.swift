@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import FirebaseAuth
 
 class SelectUserViewController: UIViewController,  UITableViewDelegate, UITableViewDataSource {
 
@@ -17,6 +18,7 @@ class SelectUserViewController: UIViewController,  UITableViewDelegate, UITableV
     var users : [User] = []
     var imageURL = ""
     var descript = ""
+    var uuid = ""
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return users.count
@@ -35,10 +37,10 @@ class SelectUserViewController: UIViewController,  UITableViewDelegate, UITableV
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let user = users[indexPath.row]
 
-        let snap = ["from":user.email, "description":descript,"imageURL":imageURL]
+        let snap = ["from":FIRAuth.auth()!.currentUser!.email!, "description":descript,"imageURL":imageURL, "uuid":uuid]
        
         FIRDatabase.database().reference().child("users").child(user.uid).child("snaps").childByAutoId().setValue(snap)
-        
+        navigationController!.popToRootViewController(animated: true)
         
     }
     

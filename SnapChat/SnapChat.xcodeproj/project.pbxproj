@@ -19,6 +19,7 @@
 		E321478D1E25C02100712083 /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E321478C1E25C02100712083 /* SelectUserViewController.swift */; };
 		E32147931E25CD4000712083 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32147921E25CD4000712083 /* User.swift */; };
 		E32147951E25E0C000712083 /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32147941E25E0C000712083 /* Snap.swift */; };
+		E32147971E26F82A00712083 /* ViewSnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32147961E26F82A00712083 /* ViewSnapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		E321478C1E25C02100712083 /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		E32147921E25CD4000712083 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E32147941E25E0C000712083 /* Snap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
+		E32147961E26F82A00712083 /* ViewSnapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewSnapViewController.swift; sourceTree = "<group>"; };
 		E4FF981B2402D9A4CF0D30C4 /* Pods-SnapChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SnapChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SnapChat/Pods-SnapChat.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +111,7 @@
 				E32147881E25A67A00712083 /* SnapsViewController.swift */,
 				E321478C1E25C02100712083 /* SelectUserViewController.swift */,
 				E321478A1E25B18B00712083 /* PictureViewController.swift */,
+				E32147961E26F82A00712083 /* ViewSnapViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				E32147351E2471C800712083 /* SignInViewController.swift in Sources */,
 				E321478B1E25B18B00712083 /* PictureViewController.swift in Sources */,
 				E32147931E25CD4000712083 /* User.swift in Sources */,
+				E32147971E26F82A00712083 /* ViewSnapViewController.swift in Sources */,
 				E321478D1E25C02100712083 /* SelectUserViewController.swift in Sources */,
 				E32147951E25E0C000712083 /* Snap.swift in Sources */,
 				E32147331E2471C800712083 /* AppDelegate.swift in Sources */,

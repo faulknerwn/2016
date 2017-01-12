@@ -13,10 +13,10 @@ import FirebaseStorage
 class PictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var imagePicker = UIImagePickerController()
-    
+    var uuid = (NSUUID().uuidString)
     
     @IBAction func cameraTapped(_ sender: Any) {
-        imagePicker.sourceType = .savedPhotosAlbum
+        imagePicker.sourceType = .camera
         imagePicker.allowsEditing = false
         
         present(imagePicker, animated: true, completion: nil)
@@ -28,6 +28,7 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         imageView.image = image
         imageView.backgroundColor = UIColor.clear
+        nextButton.isEnabled = true
         imagePicker.dismiss(animated: true, completion: nil)
     }
     
@@ -44,14 +45,14 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         let imageData = UIImageJPEGRepresentation(imageView.image!, 0.1)! //0.1 is compression
         
         //UU generates random string
-        imagesFolder.child("\(NSUUID().uuidString).jpg").put(imageData, metadata: nil, completion: {(metadata, error) in
+        imagesFolder.child("\(uuid).jpg").put(imageData, metadata: nil, completion: {(metadata, error) in
             print("we tried to upload")
             
             if error != nil {
                 print("We had an error:\(error)")
                 
             } else {
-                print("metadata line",metadata?.downloadURL())
+                
                 self.performSegue(withIdentifier: "selectUserSegue", sender: metadata!.downloadURL()!.absoluteString)
             }
         })
@@ -64,13 +65,14 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         
         nextVC.imageURL = sender as! String
         nextVC.descript = textField.text!
-        
+        nextVC.uuid = uuid
         
     }
         
         override func viewDidLoad() {
             super.viewDidLoad()
             imagePicker.delegate = self
+            nextButton.isEnabled = false
             
             // Do any additional setup after loading the view.
         }
