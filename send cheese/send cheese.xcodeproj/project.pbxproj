@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E34473921E2720AA0025E9F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34473911E2720AA0025E9F7 /* AppDelegate.swift */; };
+		E34473941E2720AA0025E9F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34473931E2720AA0025E9F7 /* ViewController.swift */; };
+		E34473971E2720AA0025E9F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34473951E2720AA0025E9F7 /* Main.storyboard */; };
+		E344739A1E2720AB0025E9F7 /* send_cheese.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E34473981E2720AB0025E9F7 /* send_cheese.xcdatamodeld */; };
+		E344739C1E2720AB0025E9F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E344739B1E2720AB0025E9F7 /* Assets.xcassets */; };
+		E344739F1E2720AB0025E9F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E344739D1E2720AB0025E9F7 /* LaunchScreen.storyboard */; };
+		E34473AD1E27213B0025E9F7 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34473AC1E27213B0025E9F7 /* IntentHandler.swift */; };
+		E34473B61E27213B0025E9F7 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E34473B51E27213B0025E9F7 /* IntentsUI.framework */; };
+		E34473B91E27213B0025E9F7 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34473B81E27213B0025E9F7 /* IntentViewController.swift */; };
+		E34473BC1E27213B0025E9F7 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34473BA1E27213B0025E9F7 /* MainInterface.storyboard */; };
+		E34473C01E27213B0025E9F7 /* cheeseIntentsUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E34473B31E27213B0025E9F7 /* cheeseIntentsUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E34473C31E27213B0025E9F7 /* cheeseIntents.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E34473AA1E27213B0025E9F7 /* cheeseIntents.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E34473BE1E27213B0025E9F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E34473861E2720AA0025E9F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E34473B21E27213B0025E9F7;
+			remoteInfo = cheeseIntentsUI;
+		};
+		E34473C11E27213B0025E9F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E34473861E2720AA0025E9F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E34473A91E27213B0025E9F7;
+			remoteInfo = cheeseIntents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E34473CA1E27213B0025E9F7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E34473C01E27213B0025E9F7 /* cheeseIntentsUI.appex in Embed App Extensions */,
+				E34473C31E27213B0025E9F7 /* cheeseIntents.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E344738E1E2720AA0025E9F7 /* send cheese.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "send cheese.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34473911E2720AA0025E9F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E34473931E2720AA0025E9F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E34473961E2720AA0025E9F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E34473991E2720AB0025E9F7 /* send_cheese.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = send_cheese.xcdatamodel; sourceTree = "<group>"; };
+		E344739B1E2720AB0025E9F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E344739E1E2720AB0025E9F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E34473A01E2720AB0025E9F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E34473AA1E27213B0025E9F7 /* cheeseIntents.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = cheeseIntents.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34473AC1E27213B0025E9F7 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		E34473AE1E27213B0025E9F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E34473B31E27213B0025E9F7 /* cheeseIntentsUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = cheeseIntentsUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E34473B51E27213B0025E9F7 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		E34473B81E27213B0025E9F7 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		E34473BB1E27213B0025E9F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		E34473BD1E27213B0025E9F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E344738B1E2720AA0025E9F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34473A71E27213B0025E9F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34473B01E27213B0025E9F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34473B61E27213B0025E9F7 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E34473851E2720AA0025E9F7 = {
+			isa = PBXGroup;
+			children = (
+				E34473901E2720AA0025E9F7 /* send cheese */,
+				E34473AB1E27213B0025E9F7 /* cheeseIntents */,
+				E34473B71E27213B0025E9F7 /* cheeseIntentsUI */,
+				E34473B41E27213B0025E9F7 /* Frameworks */,
+				E344738F1E2720AA0025E9F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E344738F1E2720AA0025E9F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E344738E1E2720AA0025E9F7 /* send cheese.app */,
+				E34473AA1E27213B0025E9F7 /* cheeseIntents.appex */,
+				E34473B31E27213B0025E9F7 /* cheeseIntentsUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E34473901E2720AA0025E9F7 /* send cheese */ = {
+			isa = PBXGroup;
+			children = (
+				E34473911E2720AA0025E9F7 /* AppDelegate.swift */,
+				E34473931E2720AA0025E9F7 /* ViewController.swift */,
+				E34473951E2720AA0025E9F7 /* Main.storyboard */,
+				E344739B1E2720AB0025E9F7 /* Assets.xcassets */,
+				E344739D1E2720AB0025E9F7 /* LaunchScreen.storyboard */,
+				E34473A01E2720AB0025E9F7 /* Info.plist */,
+				E34473981E2720AB0025E9F7 /* send_cheese.xcdatamodeld */,
+			);
+			path = "send cheese";
+			sourceTree = "<group>";
+		};
+		E34473AB1E27213B0025E9F7 /* cheeseIntents */ = {
+			isa = PBXGroup;
+			children = (
+				E34473AC1E27213B0025E9F7 /* IntentHandler.swift */,
+				E34473AE1E27213B0025E9F7 /* Info.plist */,
+			);
+			path = cheeseIntents;
+			sourceTree = "<group>";
+		};
+		E34473B41E27213B0025E9F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E34473B51E27213B0025E9F7 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E34473B71E27213B0025E9F7 /* cheeseIntentsUI */ = {
+			isa = PBXGroup;
+			children = (
+				E34473B81E27213B0025E9F7 /* IntentViewController.swift */,
+				E34473BA1E27213B0025E9F7 /* MainInterface.storyboard */,
+				E34473BD1E27213B0025E9F7 /* Info.plist */,
+			);
+			path = cheeseIntentsUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E344738D1E2720AA0025E9F7 /* send cheese */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34473A31E2720AB0025E9F7 /* Build configuration list for PBXNativeTarget "send cheese" */;
+			buildPhases = (
+				E344738A1E2720AA0025E9F7 /* Sources */,
+				E344738B1E2720AA0025E9F7 /* Frameworks */,
+				E344738C1E2720AA0025E9F7 /* Resources */,
+				E34473CA1E27213B0025E9F7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E34473BF1E27213B0025E9F7 /* PBXTargetDependency */,
+				E34473C21E27213B0025E9F7 /* PBXTargetDependency */,
+			);
+			name = "send cheese";
+			productName = "send cheese";
+			productReference = E344738E1E2720AA0025E9F7 /* send cheese.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E34473A91E27213B0025E9F7 /* cheeseIntents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34473C71E27213B0025E9F7 /* Build configuration list for PBXNativeTarget "cheeseIntents" */;
+			buildPhases = (
+				E34473A61E27213B0025E9F7 /* Sources */,
+				E34473A71E27213B0025E9F7 /* Frameworks */,
+				E34473A81E27213B0025E9F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cheeseIntents;
+			productName = cheeseIntents;
+			productReference = E34473AA1E27213B0025E9F7 /* cheeseIntents.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		E34473B21E27213B0025E9F7 /* cheeseIntentsUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E34473C41E27213B0025E9F7 /* Build configuration list for PBXNativeTarget "cheeseIntentsUI" */;
+			buildPhases = (
+				E34473AF1E27213B0025E9F7 /* Sources */,
+				E34473B01E27213B0025E9F7 /* Frameworks */,
+				E34473B11E27213B0025E9F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = cheeseIntentsUI;
+			productName = cheeseIntentsUI;
+			productReference = E34473B31E27213B0025E9F7 /* cheeseIntentsUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E34473861E2720AA0025E9F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Leprechaun Skydiving";
+				TargetAttributes = {
+					E344738D1E2720AA0025E9F7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GJG5Q5X4VR;
+						ProvisioningStyle = Automatic;
+					};
+					E34473A91E27213B0025E9F7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GJG5Q5X4VR;
+						ProvisioningStyle = Automatic;
+					};
+					E34473B21E27213B0025E9F7 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = GJG5Q5X4VR;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E34473891E2720AA0025E9F7 /* Build configuration list for PBXProject "send cheese" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E34473851E2720AA0025E9F7;
+			productRefGroup = E344738F1E2720AA0025E9F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E344738D1E2720AA0025E9F7 /* send cheese */,
+				E34473A91E27213B0025E9F7 /* cheeseIntents */,
+				E34473B21E27213B0025E9F7 /* cheeseIntentsUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E344738C1E2720AA0025E9F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E344739F1E2720AB0025E9F7 /* LaunchScreen.storyboard in Resources */,
+				E344739C1E2720AB0025E9F7 /* Assets.xcassets in Resources */,
+				E34473971E2720AA0025E9F7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34473A81E27213B0025E9F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34473B11E27213B0025E9F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34473BC1E27213B0025E9F7 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E344738A1E2720AA0025E9F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34473941E2720AA0025E9F7 /* ViewController.swift in Sources */,
+				E344739A1E2720AB0025E9F7 /* send_cheese.xcdatamodeld in Sources */,
+				E34473921E2720AA0025E9F7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34473A61E27213B0025E9F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34473AD1E27213B0025E9F7 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E34473AF1E27213B0025E9F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E34473B91E27213B0025E9F7 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E34473BF1E27213B0025E9F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E34473B21E27213B0025E9F7 /* cheeseIntentsUI */;
+			targetProxy = E34473BE1E27213B0025E9F7 /* PBXContainerItemProxy */;
+		};
+		E34473C21E27213B0025E9F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E34473A91E27213B0025E9F7 /* cheeseIntents */;
+			targetProxy = E34473C11E27213B0025E9F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E34473951E2720AA0025E9F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E34473961E2720AA0025E9F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E344739D1E2720AB0025E9F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E344739E1E2720AB0025E9F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E34473BA1E27213B0025E9F7 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E34473BB1E27213B0025E9F7 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E34473A11E2720AB0025E9F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E34473A21E2720AB0025E9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E34473A41E2720AB0025E9F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GJG5Q5X4VR;
+				INFOPLIST_FILE = "send cheese/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leprechaunskydiving.send-cheese";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E34473A51E2720AB0025E9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GJG5Q5X4VR;
+				INFOPLIST_FILE = "send cheese/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leprechaunskydiving.send-cheese";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E34473C51E27213B0025E9F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GJG5Q5X4VR;
+				INFOPLIST_FILE = cheeseIntentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leprechaunskydiving.send-cheese.cheeseIntentsUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E34473C61E27213B0025E9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GJG5Q5X4VR;
+				INFOPLIST_FILE = cheeseIntentsUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leprechaunskydiving.send-cheese.cheeseIntentsUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		E34473C81E27213B0025E9F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GJG5Q5X4VR;
+				INFOPLIST_FILE = cheeseIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leprechaunskydiving.send-cheese.cheeseIntents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E34473C91E27213B0025E9F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = GJG5Q5X4VR;
+				INFOPLIST_FILE = cheeseIntents/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.leprechaunskydiving.send-cheese.cheeseIntents";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E34473891E2720AA0025E9F7 /* Build configuration list for PBXProject "send cheese" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34473A11E2720AB0025E9F7 /* Debug */,
+				E34473A21E2720AB0025E9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E34473A31E2720AB0025E9F7 /* Build configuration list for PBXNativeTarget "send cheese" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34473A41E2720AB0025E9F7 /* Debug */,
+				E34473A51E2720AB0025E9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E34473C41E27213B0025E9F7 /* Build configuration list for PBXNativeTarget "cheeseIntentsUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34473C51E27213B0025E9F7 /* Debug */,
+				E34473C61E27213B0025E9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E34473C71E27213B0025E9F7 /* Build configuration list for PBXNativeTarget "cheeseIntents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E34473C81E27213B0025E9F7 /* Debug */,
+				E34473C91E27213B0025E9F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E34473981E2720AB0025E9F7 /* send_cheese.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E34473991E2720AB0025E9F7 /* send_cheese.xcdatamodel */,
+			);
+			currentVersion = E34473991E2720AB0025E9F7 /* send_cheese.xcdatamodel */;
+			path = send_cheese.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E34473861E2720AA0025E9F7 /* Project object */;
+}
