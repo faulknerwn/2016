@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Users-->
         <scene sceneID="fvM-7B-kLx">
             <objects>
                 <tableViewController id="EoY-gc-BM0" customClass="UserTableTableViewController" customModule="ParseStarterProject_Swift" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Dbz-c3-K3i">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Dbz-c3-K3i">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Dbz-c3-K3i" id="fsW-NH-Vnc">
@@ -32,7 +32,16 @@
                             <outlet property="delegate" destination="EoY-gc-BM0" id="b5V-Im-HwV"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="k7L-jI-7uk"/>
+                    <navigationItem key="navigationItem" title="Users" id="k7L-jI-7uk">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="FPT-uK-yLs">
+                            <connections>
+                                <action selector="logout:" destination="EoY-gc-BM0" id="f2y-Ib-5wm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="logoutSegue" id="jSF-Mm-ex2"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="323-Hy-ijd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -131,7 +140,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="566" y="156"/>
+            <point key="canvasLocation" x="28" y="162"/>
         </scene>
     </scenes>
 </document>

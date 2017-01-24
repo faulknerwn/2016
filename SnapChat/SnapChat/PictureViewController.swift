@@ -10,13 +10,13 @@ import UIKit
 import FirebaseAuth
 import FirebaseStorage
 
-class PictureViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+class PictureViewController: UIViewController, UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     var imagePicker = UIImagePickerController()
     var uuid = (NSUUID().uuidString)
     
     @IBAction func cameraTapped(_ sender: Any) {
-        imagePicker.sourceType = .camera
+        imagePicker.sourceType = .photoLibrary
         imagePicker.allowsEditing = false
         
         present(imagePicker, animated: true, completion: nil)
@@ -68,12 +68,19 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         nextVC.uuid = uuid
         
     }
-        
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
+   
+    
         override func viewDidLoad() {
             super.viewDidLoad()
             imagePicker.delegate = self
             nextButton.isEnabled = false
-            
+            self.textField.delegate = self
             // Do any additional setup after loading the view.
         }
         

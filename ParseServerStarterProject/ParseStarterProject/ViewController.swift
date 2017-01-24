@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func signUp(_ sender: Any) {
-        
+      
         if emailTextField.text == "" || passwordTextField.text == "" {
             
             createAlert(title: "Error in Form", message: "Please enter an email and password")
@@ -45,7 +45,7 @@ class ViewController: UIViewController {
             
             UIApplication.shared.beginIgnoringInteractionEvents()
             
-            
+            print(signUpMode)
             if signUpMode {
                 // signup
                 let user = PFUser()
@@ -56,17 +56,27 @@ class ViewController: UIViewController {
                 user.signUpInBackground(block: { (success, error) in
                     self.activityIndicator.stopAnimating()
                     UIApplication.shared.endIgnoringInteractionEvents()
+                
                     
-                    var displayErrorMessage = "Please try again later"
                     if error != nil {
                         
-                        if let errorMessage = error as NSError? {
-                            displayErrorMessage = errorMessage.userInfo["error"] as! String
-                            self.createAlert(title:"SignUp Error", message: displayErrorMessage)
+                       
+                        var displayErrorMessage = "Please try again later"
+                        
+                        let error = error as? NSError
+                        
+                        if let errorMessage = error?.userInfo["error"] as? String {
+                            
+                            displayErrorMessage = errorMessage
+                            
+                        }
+                        
+                        self.createAlert(title:"SignUp Error", message: displayErrorMessage)
                             
                         } else {
+                        
                              print(" user signed up")
-                        }
+                            self.performSegue(withIdentifier: "showUserTable", sender: self)
                     }
                 })
                 
@@ -86,6 +96,7 @@ class ViewController: UIViewController {
                         self.createAlert(title:"Login Error", message: displayErrorMessage)
                     } else {
                         print("logged in")
+                         self.performSegue(withIdentifier: "showUserTable", sender: self)
                         }
                     })
                 }
@@ -110,6 +121,17 @@ class ViewController: UIViewController {
             messageLabel.text = "Already have an account?"
         }
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        if PFUser.current() != nil {
+             performSegue(withIdentifier: "showUserTable", sender: self)
+            
+        }
+        
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    
     
     @IBOutlet var changeSignUpModeButton: UIButton!
     
