@@ -17,6 +17,10 @@
 		81BA81791A49E0DB00E65899 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA81781A49E0DB00E65899 /* AudioToolbox.framework */; };
 		81BA817B1A49E0E500E65899 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */; };
 		81BA817F1A49E0F000E65899 /* libstdc++.6.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */; };
+		E316B9D51E38393600E344D2 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E316B9D41E38393600E344D2 /* PostViewController.swift */; };
+		E316B9D71E383A1900E344D2 /* person.png in Resources */ = {isa = PBXBuildFile; fileRef = E316B9D61E383A1900E344D2 /* person.png */; };
+		E346A39C1E39A1490018B4C1 /* FeedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E346A39B1E39A1480018B4C1 /* FeedTableViewController.swift */; };
+		E346A39E1E39A5B10018B4C1 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E346A39D1E39A5B10018B4C1 /* FeedTableViewCell.swift */; };
 		E365039D1E31A8F40095D18E /* UserTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E365039C1E31A8F40095D18E /* UserTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +39,10 @@
 		81BA817A1A49E0E500E65899 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		81BA817E1A49E0F000E65899 /* libstdc++.6.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.dylib"; path = "usr/lib/libstdc++.6.dylib"; sourceTree = SDKROOT; };
 		81BA81801A49E10C00E65899 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
+		E316B9D41E38393600E344D2 /* PostViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		E316B9D61E383A1900E344D2 /* person.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = person.png; sourceTree = "<group>"; };
+		E346A39B1E39A1480018B4C1 /* FeedTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewController.swift; sourceTree = "<group>"; };
+		E346A39D1E39A5B10018B4C1 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
 		E365039C1E31A8F40095D18E /* UserTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +96,10 @@
 				81BA814A1A49DA1800E65899 /* AppDelegate.swift */,
 				81BA814C1A49DA1800E65899 /* ViewController.swift */,
 				814C3AC61B69877600E307BB /* Main.storyboard */,
+				E346A39D1E39A5B10018B4C1 /* FeedTableViewCell.swift */,
+				E346A39B1E39A1480018B4C1 /* FeedTableViewController.swift */,
+				E316B9D61E383A1900E344D2 /* person.png */,
+				E316B9D41E38393600E344D2 /* PostViewController.swift */,
 				E365039C1E31A8F40095D18E /* UserTableTableViewController.swift */,
 			);
 			path = ParseStarterProject;
@@ -175,6 +187,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E316B9D71E383A1900E344D2 /* person.png in Resources */,
 				814C3ACA1B69877600E307BB /* Main.storyboard in Resources */,
 				814C3ACB1B69877600E307BB /* Images.xcassets in Resources */,
 			);
@@ -187,7 +200,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E316B9D51E38393600E344D2 /* PostViewController.swift in Sources */,
+				E346A39E1E39A5B10018B4C1 /* FeedTableViewCell.swift in Sources */,
 				E365039D1E31A8F40095D18E /* UserTableTableViewController.swift in Sources */,
+				E346A39C1E39A1490018B4C1 /* FeedTableViewController.swift in Sources */,
 				81BA814D1A49DA1800E65899 /* ViewController.swift in Sources */,
 				81BA814B1A49DA1800E65899 /* AppDelegate.swift in Sources */,
 			);

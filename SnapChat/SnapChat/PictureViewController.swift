@@ -74,7 +74,7 @@ class PictureViewController: UIViewController, UITextFieldDelegate, UIImagePicke
         return true
     }
     
-   
+    
     
         override func viewDidLoad() {
             super.viewDidLoad()
