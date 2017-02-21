@@ -170,7 +170,7 @@
 					};
 					E3261B6C1E5A7137008E8F0B = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = GJG5Q5X4VR;
+						DevelopmentTeam = Y6AE2C2DXS;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -386,7 +386,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				DEVELOPMENT_TEAM = GJG5Q5X4VR;
+				DEVELOPMENT_TEAM = Y6AE2C2DXS;
 				INFOPLIST_FILE = CB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leprechaunskydiving.Ad-Blocker.CB";
@@ -400,7 +400,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				DEVELOPMENT_TEAM = GJG5Q5X4VR;
+				DEVELOPMENT_TEAM = Y6AE2C2DXS;
 				INFOPLIST_FILE = CB/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leprechaunskydiving.Ad-Blocker.CB";
@@ -429,6 +429,7 @@
 				E3261B681E5A710A008E8F0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E3261B771E5A7137008E8F0B /* Build configuration list for PBXNativeTarget "CB" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +438,7 @@
 				E3261B791E5A7137008E8F0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
