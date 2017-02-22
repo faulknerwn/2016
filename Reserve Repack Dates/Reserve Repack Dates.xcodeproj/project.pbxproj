@@ -13,6 +13,7 @@
 		E3261C381E5BC99C008E8F0B /* Reserve_Repack_Dates.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3261C361E5BC99C008E8F0B /* Reserve_Repack_Dates.xcdatamodeld */; };
 		E3261C3A1E5BC99D008E8F0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3261C391E5BC99D008E8F0B /* Assets.xcassets */; };
 		E3261C3D1E5BC99D008E8F0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3261C3B1E5BC99D008E8F0B /* LaunchScreen.storyboard */; };
+		E3261C451E5BCCA2008E8F0B /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3261C441E5BCCA2008E8F0B /* AddViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E3261C391E5BC99D008E8F0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3261C3C1E5BC99D008E8F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3261C3E1E5BC99D008E8F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3261C441E5BCCA2008E8F0B /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				E3261C2F1E5BC99C008E8F0B /* AppDelegate.swift */,
 				E3261C311E5BC99C008E8F0B /* ViewController.swift */,
 				E3261C331E5BC99C008E8F0B /* Main.storyboard */,
+				E3261C441E5BCCA2008E8F0B /* AddViewController.swift */,
 				E3261C391E5BC99D008E8F0B /* Assets.xcassets */,
 				E3261C3B1E5BC99D008E8F0B /* LaunchScreen.storyboard */,
 				E3261C3E1E5BC99D008E8F0B /* Info.plist */,
@@ -142,6 +145,7 @@
 			files = (
 				E3261C381E5BC99C008E8F0B /* Reserve_Repack_Dates.xcdatamodeld in Sources */,
 				E3261C321E5BC99C008E8F0B /* ViewController.swift in Sources */,
+				E3261C451E5BCCA2008E8F0B /* AddViewController.swift in Sources */,
 				E3261C301E5BC99C008E8F0B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,6 +308,7 @@
 				E3261C431E5BC99E008E8F0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
