@@ -7,29 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E3261C301E5BC99C008E8F0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3261C2F1E5BC99C008E8F0B /* AppDelegate.swift */; };
-		E3261C321E5BC99C008E8F0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3261C311E5BC99C008E8F0B /* ViewController.swift */; };
-		E3261C351E5BC99C008E8F0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3261C331E5BC99C008E8F0B /* Main.storyboard */; };
-		E3261C381E5BC99C008E8F0B /* Reserve_Repack_Dates.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3261C361E5BC99C008E8F0B /* Reserve_Repack_Dates.xcdatamodeld */; };
-		E3261C3A1E5BC99D008E8F0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3261C391E5BC99D008E8F0B /* Assets.xcassets */; };
-		E3261C3D1E5BC99D008E8F0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3261C3B1E5BC99D008E8F0B /* LaunchScreen.storyboard */; };
-		E3261C451E5BCCA2008E8F0B /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3261C441E5BCCA2008E8F0B /* AddViewController.swift */; };
+		E3F3F17E1E5E5DE000E469E8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F3F17D1E5E5DE000E469E8 /* AppDelegate.swift */; };
+		E3F3F1801E5E5DE000E469E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F3F17F1E5E5DE000E469E8 /* ViewController.swift */; };
+		E3F3F1831E5E5DE100E469E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3F3F1811E5E5DE100E469E8 /* Main.storyboard */; };
+		E3F3F1861E5E5DE100E469E8 /* testNotification.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3F3F1841E5E5DE100E469E8 /* testNotification.xcdatamodeld */; };
+		E3F3F1881E5E5DE100E469E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3F3F1871E5E5DE100E469E8 /* Assets.xcassets */; };
+		E3F3F18B1E5E5DE100E469E8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3F3F1891E5E5DE100E469E8 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E3261C2C1E5BC99C008E8F0B /* Reserve Repack Dates.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reserve Repack Dates.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3261C2F1E5BC99C008E8F0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E3261C311E5BC99C008E8F0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E3261C341E5BC99C008E8F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E3261C371E5BC99C008E8F0B /* Reserve_Repack_Dates.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Reserve_Repack_Dates.xcdatamodel; sourceTree = "<group>"; };
-		E3261C391E5BC99D008E8F0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E3261C3C1E5BC99D008E8F0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E3261C3E1E5BC99D008E8F0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E3261C441E5BCCA2008E8F0B /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
+		E3F3F17A1E5E5DE000E469E8 /* testNotification.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testNotification.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3F3F17D1E5E5DE000E469E8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E3F3F17F1E5E5DE000E469E8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E3F3F1821E5E5DE100E469E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3F3F1851E5E5DE100E469E8 /* testNotification.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testNotification.xcdatamodel; sourceTree = "<group>"; };
+		E3F3F1871E5E5DE100E469E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E3F3F18A1E5E5DE100E469E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E3F3F18C1E5E5DE100E469E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E3261C291E5BC99B008E8F0B /* Frameworks */ = {
+		E3F3F1771E5E5DE000E469E8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,75 +37,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E3261C231E5BC99A008E8F0B = {
+		E3F3F1711E5E5DE000E469E8 = {
 			isa = PBXGroup;
 			children = (
-				E3261C2E1E5BC99C008E8F0B /* Reserve Repack Dates */,
-				E3261C2D1E5BC99C008E8F0B /* Products */,
+				E3F3F17C1E5E5DE000E469E8 /* testNotification */,
+				E3F3F17B1E5E5DE000E469E8 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E3261C2D1E5BC99C008E8F0B /* Products */ = {
+		E3F3F17B1E5E5DE000E469E8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E3261C2C1E5BC99C008E8F0B /* Reserve Repack Dates.app */,
+				E3F3F17A1E5E5DE000E469E8 /* testNotification.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E3261C2E1E5BC99C008E8F0B /* Reserve Repack Dates */ = {
+		E3F3F17C1E5E5DE000E469E8 /* testNotification */ = {
 			isa = PBXGroup;
 			children = (
-				E3261C2F1E5BC99C008E8F0B /* AppDelegate.swift */,
-				E3261C311E5BC99C008E8F0B /* ViewController.swift */,
-				E3261C331E5BC99C008E8F0B /* Main.storyboard */,
-				E3261C441E5BCCA2008E8F0B /* AddViewController.swift */,
-				E3261C391E5BC99D008E8F0B /* Assets.xcassets */,
-				E3261C3B1E5BC99D008E8F0B /* LaunchScreen.storyboard */,
-				E3261C3E1E5BC99D008E8F0B /* Info.plist */,
-				E3261C361E5BC99C008E8F0B /* Reserve_Repack_Dates.xcdatamodeld */,
+				E3F3F17D1E5E5DE000E469E8 /* AppDelegate.swift */,
+				E3F3F17F1E5E5DE000E469E8 /* ViewController.swift */,
+				E3F3F1811E5E5DE100E469E8 /* Main.storyboard */,
+				E3F3F1871E5E5DE100E469E8 /* Assets.xcassets */,
+				E3F3F1891E5E5DE100E469E8 /* LaunchScreen.storyboard */,
+				E3F3F18C1E5E5DE100E469E8 /* Info.plist */,
+				E3F3F1841E5E5DE100E469E8 /* testNotification.xcdatamodeld */,
 			);
-			path = "Reserve Repack Dates";
+			path = testNotification;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E3261C2B1E5BC99B008E8F0B /* Reserve Repack Dates */ = {
+		E3F3F1791E5E5DE000E469E8 /* testNotification */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E3261C411E5BC99E008E8F0B /* Build configuration list for PBXNativeTarget "Reserve Repack Dates" */;
+			buildConfigurationList = E3F3F18F1E5E5DE100E469E8 /* Build configuration list for PBXNativeTarget "testNotification" */;
 			buildPhases = (
-				E3261C281E5BC99B008E8F0B /* Sources */,
-				E3261C291E5BC99B008E8F0B /* Frameworks */,
-				E3261C2A1E5BC99B008E8F0B /* Resources */,
+				E3F3F1761E5E5DE000E469E8 /* Sources */,
+				E3F3F1771E5E5DE000E469E8 /* Frameworks */,
+				E3F3F1781E5E5DE000E469E8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Reserve Repack Dates";
-			productName = "Reserve Repack Dates";
-			productReference = E3261C2C1E5BC99C008E8F0B /* Reserve Repack Dates.app */;
+			name = testNotification;
+			productName = testNotification;
+			productReference = E3F3F17A1E5E5DE000E469E8 /* testNotification.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E3261C241E5BC99A008E8F0B /* Project object */ = {
+		E3F3F1721E5E5DE000E469E8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Leprechaun Skydiving";
 				TargetAttributes = {
-					E3261C2B1E5BC99B008E8F0B = {
+					E3F3F1791E5E5DE000E469E8 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = GJG5Q5X4VR;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = E3261C271E5BC99A008E8F0B /* Build configuration list for PBXProject "Reserve Repack Dates" */;
+			buildConfigurationList = E3F3F1751E5E5DE000E469E8 /* Build configuration list for PBXProject "testNotification" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -115,56 +112,55 @@
 				en,
 				Base,
 			);
-			mainGroup = E3261C231E5BC99A008E8F0B;
-			productRefGroup = E3261C2D1E5BC99C008E8F0B /* Products */;
+			mainGroup = E3F3F1711E5E5DE000E469E8;
+			productRefGroup = E3F3F17B1E5E5DE000E469E8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E3261C2B1E5BC99B008E8F0B /* Reserve Repack Dates */,
+				E3F3F1791E5E5DE000E469E8 /* testNotification */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E3261C2A1E5BC99B008E8F0B /* Resources */ = {
+		E3F3F1781E5E5DE000E469E8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3261C3D1E5BC99D008E8F0B /* LaunchScreen.storyboard in Resources */,
-				E3261C3A1E5BC99D008E8F0B /* Assets.xcassets in Resources */,
-				E3261C351E5BC99C008E8F0B /* Main.storyboard in Resources */,
+				E3F3F18B1E5E5DE100E469E8 /* LaunchScreen.storyboard in Resources */,
+				E3F3F1881E5E5DE100E469E8 /* Assets.xcassets in Resources */,
+				E3F3F1831E5E5DE100E469E8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E3261C281E5BC99B008E8F0B /* Sources */ = {
+		E3F3F1761E5E5DE000E469E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3261C381E5BC99C008E8F0B /* Reserve_Repack_Dates.xcdatamodeld in Sources */,
-				E3261C321E5BC99C008E8F0B /* ViewController.swift in Sources */,
-				E3261C451E5BCCA2008E8F0B /* AddViewController.swift in Sources */,
-				E3261C301E5BC99C008E8F0B /* AppDelegate.swift in Sources */,
+				E3F3F1861E5E5DE100E469E8 /* testNotification.xcdatamodeld in Sources */,
+				E3F3F1801E5E5DE000E469E8 /* ViewController.swift in Sources */,
+				E3F3F17E1E5E5DE000E469E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E3261C331E5BC99C008E8F0B /* Main.storyboard */ = {
+		E3F3F1811E5E5DE100E469E8 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E3261C341E5BC99C008E8F0B /* Base */,
+				E3F3F1821E5E5DE100E469E8 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		E3261C3B1E5BC99D008E8F0B /* LaunchScreen.storyboard */ = {
+		E3F3F1891E5E5DE100E469E8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E3261C3C1E5BC99D008E8F0B /* Base */,
+				E3F3F18A1E5E5DE100E469E8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -172,7 +168,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E3261C3F1E5BC99E008E8F0B /* Debug */ = {
+		E3F3F18D1E5E5DE100E469E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -221,7 +217,7 @@
 			};
 			name = Debug;
 		};
-		E3261C401E5BC99E008E8F0B /* Release */ = {
+		E3F3F18E1E5E5DE100E469E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,69 +259,70 @@
 			};
 			name = Release;
 		};
-		E3261C421E5BC99E008E8F0B /* Debug */ = {
+		E3F3F1901E5E5DE100E469E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GJG5Q5X4VR;
-				INFOPLIST_FILE = "Reserve Repack Dates/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				INFOPLIST_FILE = testNotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leprechaunskydiving.Reserve-Repack-Dates";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leprechaunskydiving.testNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E3261C431E5BC99E008E8F0B /* Release */ = {
+		E3F3F1911E5E5DE100E469E8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GJG5Q5X4VR;
-				INFOPLIST_FILE = "Reserve Repack Dates/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				INFOPLIST_FILE = testNotification/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.leprechaunskydiving.Reserve-Repack-Dates";
+				PRODUCT_BUNDLE_IDENTIFIER = com.leprechaunskydiving.testNotification;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E3261C271E5BC99A008E8F0B /* Build configuration list for PBXProject "Reserve Repack Dates" */ = {
+		E3F3F1751E5E5DE000E469E8 /* Build configuration list for PBXProject "testNotification" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E3261C3F1E5BC99E008E8F0B /* Debug */,
-				E3261C401E5BC99E008E8F0B /* Release */,
+				E3F3F18D1E5E5DE100E469E8 /* Debug */,
+				E3F3F18E1E5E5DE100E469E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E3261C411E5BC99E008E8F0B /* Build configuration list for PBXNativeTarget "Reserve Repack Dates" */ = {
+		E3F3F18F1E5E5DE100E469E8 /* Build configuration list for PBXNativeTarget "testNotification" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E3261C421E5BC99E008E8F0B /* Debug */,
-				E3261C431E5BC99E008E8F0B /* Release */,
+				E3F3F1901E5E5DE100E469E8 /* Debug */,
+				E3F3F1911E5E5DE100E469E8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E3261C361E5BC99C008E8F0B /* Reserve_Repack_Dates.xcdatamodeld */ = {
+		E3F3F1841E5E5DE100E469E8 /* testNotification.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E3261C371E5BC99C008E8F0B /* Reserve_Repack_Dates.xcdatamodel */,
+				E3F3F1851E5E5DE100E469E8 /* testNotification.xcdatamodel */,
 			);
-			currentVersion = E3261C371E5BC99C008E8F0B /* Reserve_Repack_Dates.xcdatamodel */;
-			path = Reserve_Repack_Dates.xcdatamodeld;
+			currentVersion = E3F3F1851E5E5DE100E469E8 /* testNotification.xcdatamodel */;
+			path = testNotification.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
 	};
-	rootObject = E3261C241E5BC99A008E8F0B /* Project object */;
+	rootObject = E3F3F1721E5E5DE000E469E8 /* Project object */;
 }
