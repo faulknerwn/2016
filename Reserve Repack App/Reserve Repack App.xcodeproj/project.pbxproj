@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E3558BB31E65141D0022926F /* rig.png in Resources */ = {isa = PBXBuildFile; fileRef = E3558BB21E65141D0022926F /* rig.png */; };
 		E37A09971E6378D400978A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37A09961E6378D400978A54 /* AppDelegate.swift */; };
 		E37A09991E6378D400978A54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37A09981E6378D400978A54 /* ViewController.swift */; };
 		E37A099C1E6378D400978A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37A099A1E6378D400978A54 /* Main.storyboard */; };
@@ -14,10 +15,10 @@
 		E37A09A11E6378D400978A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E37A09A01E6378D400978A54 /* Assets.xcassets */; };
 		E37A09A41E6378D400978A54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E37A09A21E6378D400978A54 /* LaunchScreen.storyboard */; };
 		E37A09AC1E637E8C00978A54 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37A09AB1E637E8C00978A54 /* AddViewController.swift */; };
-		E37A09AE1E63833A00978A54 /* cat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E37A09AD1E63833A00978A54 /* cat.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E3558BB21E65141D0022926F /* rig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rig.png; sourceTree = "<group>"; };
 		E37A09931E6378D400978A54 /* Reserve Repack App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reserve Repack App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E37A09961E6378D400978A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E37A09981E6378D400978A54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,7 +28,6 @@
 		E37A09A31E6378D400978A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E37A09A51E6378D400978A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E37A09AB1E637E8C00978A54 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
-		E37A09AD1E63833A00978A54 /* cat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cat.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +66,7 @@
 				E37A09AB1E637E8C00978A54 /* AddViewController.swift */,
 				E37A09A01E6378D400978A54 /* Assets.xcassets */,
 				E37A09A21E6378D400978A54 /* LaunchScreen.storyboard */,
-				E37A09AD1E63833A00978A54 /* cat.jpg */,
+				E3558BB21E65141D0022926F /* rig.png */,
 				E37A09A51E6378D400978A54 /* Info.plist */,
 				E37A099D1E6378D400978A54 /* Reserve_Repack_App.xcdatamodeld */,
 			);
@@ -135,7 +135,7 @@
 			files = (
 				E37A09A41E6378D400978A54 /* LaunchScreen.storyboard in Resources */,
 				E37A09A11E6378D400978A54 /* Assets.xcassets in Resources */,
-				E37A09AE1E63833A00978A54 /* cat.jpg in Resources */,
+				E3558BB31E65141D0022926F /* rig.png in Resources */,
 				E37A099C1E6378D400978A54 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,12 +271,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = GJG5Q5X4VR;
 				INFOPLIST_FILE = "Reserve Repack App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leprechaunskydiving.Reserve-Repack-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -284,12 +286,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = GJG5Q5X4VR;
 				INFOPLIST_FILE = "Reserve Repack App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.leprechaunskydiving.Reserve-Repack-App";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -312,6 +316,7 @@
 				E37A09AA1E6378D400978A54 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

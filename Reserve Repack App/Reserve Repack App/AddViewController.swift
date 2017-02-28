@@ -42,17 +42,55 @@ class AddViewController: UIViewController, UINavigationControllerDelegate, UITex
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         let image = info[UIImagePickerControllerOriginalImage]   as! UIImage
-        
         rigPhoto.image = image
         
         imagePicker.dismiss(animated: true, completion: nil)
         
     }
     
-    @IBAction func addPhotoPressed(_ sender: Any) {
-        
+    
+    func openGallery() {
+        imagePicker.allowsEditing = false
         imagePicker.sourceType = .photoLibrary
         present(imagePicker, animated: true, completion: nil)
+    }
+    
+    func openCamera() {
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .camera
+        present(imagePicker, animated: true, completion: nil)
+    }
+
+    
+    func cancel(){
+        print("Cancel Clicked")
+    }
+
+    
+    @IBAction func addPhotoPressed(_ sender: Any) {
+        
+        let alert:UIAlertController = UIAlertController(title: "Rig Picture Options", message: nil, preferredStyle: UIAlertControllerStyle.actionSheet)
+        
+        let galleryAction = UIAlertAction(title: "Open Gallery", style: UIAlertActionStyle.default) {
+            UIAlertAction in self.openGallery()
+        }
+        
+        let cameraAction = UIAlertAction(title: "Open Camera", style: UIAlertActionStyle.default) {
+            UIAlertAction in self.openCamera()
+        }
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel) {
+            UIAlertAction in self.cancel()
+        }
+        
+        alert.addAction(galleryAction)
+        alert.addAction(cameraAction)
+        alert.addAction(cancelAction)
+        
+        self.present(alert, animated: true, completion: nil)
+
+        //imagePicker.sourceType = .camera
+        //present(imagePicker, animated: true, completion: nil)
         
     }
     
@@ -73,8 +111,11 @@ class AddViewController: UIViewController, UINavigationControllerDelegate, UITex
         
     }
     
+  
+    
     @IBAction func addUpdateRig(_ sender: Any) {
         
+      
         
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YYYY-MM-dd"
@@ -82,12 +123,16 @@ class AddViewController: UIViewController, UINavigationControllerDelegate, UITex
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let context  = appDelegate.persistentContainer.viewContext
         
-        if rig != nil { // Add new rig 
+        if rig != nil { // Update new rig
            
             if rigDescription.text != "" {
+                
+                
                 rig?.title = rigDescription.text
                 rig?.repackDate = repackDate as NSDate
-                rig?.dueDate = dueDate as NSDate
+                                rig?.dueDate = dueDate as NSDate
+                rig?.notify1 = notificationOneDate
+                rig?.notify2 = notificationTwoDate
                 rig!.photo = UIImagePNGRepresentation(rigPhoto.image!) as NSData?
                 
                 var dueDateString = dateFormatter.string(from: rig?.dueDate! as! Date)
@@ -97,10 +142,12 @@ class AddViewController: UIViewController, UINavigationControllerDelegate, UITex
             }
             else {
                 // make alert here need title
-                print("title empty")
+                                let alert = UIAlertController(title: "Alert", message: "Must give short name for rig", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }
             
-        } else {  // Update Existing Rig
+        } else {  // Add New Rig
            
             if rigDescription.text != "" {
                 let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
@@ -108,6 +155,8 @@ class AddViewController: UIViewController, UINavigationControllerDelegate, UITex
                 rig.title = rigDescription.text
                 rig.repackDate = repackDate as NSDate
                 rig.dueDate = dueDate as NSDate
+                rig.notify1 = notificationOneDate
+                rig.notify2 = notificationTwoDate
                 rig.photo = UIImagePNGRepresentation(rigPhoto.image!) as NSData?
                 var dueDateString = dateFormatter.string(from: rig.dueDate! as Date)
                 appDelegate.saveContext()
@@ -116,7 +165,9 @@ class AddViewController: UIViewController, UINavigationControllerDelegate, UITex
             }
             else {
                 // make alert here need title
-                print("title empty")
+                let alert = UIAlertController(title: "Alert", message: "Must give short name for rig", preferredStyle: UIAlertControllerStyle.alert)
+                alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+                self.present(alert, animated: true, completion: nil)
                 
             }
         }
@@ -130,13 +181,17 @@ class AddViewController: UIViewController, UINavigationControllerDelegate, UITex
         sender.resignFirstResponder()
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
  
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        rigDescription.delegate = self
+        self.rigDescription.delegate = self
         imagePicker.delegate = self
         
         self.getDateAndTime()
@@ -147,6 +202,7 @@ class AddViewController: UIViewController, UINavigationControllerDelegate, UITex
            rigPhoto.image = UIImage(data: rig?.photo as! Data)
             rigDescription.text = rig!.title
             addUpdateButton.setTitle("Update", for: .normal)
+            datePicker.date =  rig!.repackDate as! Date
             
         } else {
             deleteButton.isHidden = true
