@@ -25,6 +25,9 @@ class AddViewController: UIViewController, UINavigationControllerDelegate, UITex
     
     @IBOutlet var deleteButton: UIButton!
     
+    @IBOutlet var addPhotoButton: UIButton!
+    
+    
     var imagePicker = UIImagePickerController()
     
     
@@ -42,6 +45,7 @@ class AddViewController: UIViewController, UINavigationControllerDelegate, UITex
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         
         let image = info[UIImagePickerControllerOriginalImage]   as! UIImage
+        
         rigPhoto.image = image
         
         imagePicker.dismiss(animated: true, completion: nil)
@@ -111,7 +115,19 @@ class AddViewController: UIViewController, UINavigationControllerDelegate, UITex
         
     }
     
-  
+    func resizeImage(image: UIImage, newHeight: CGFloat) -> UIImage? {
+        
+        let scale = newHeight / image.size.height
+        let newWidth = image.size.width * scale
+        print(newHeight,newWidth)
+        UIGraphicsBeginImageContext(CGSize(width: newWidth, height: newHeight))
+        image.draw(in: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
+        
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage
+    }
     
     @IBAction func addUpdateRig(_ sender: Any) {
         
@@ -133,7 +149,9 @@ class AddViewController: UIViewController, UINavigationControllerDelegate, UITex
                                 rig?.dueDate = dueDate as NSDate
                 rig?.notify1 = notificationOneDate
                 rig?.notify2 = notificationTwoDate
-                rig!.photo = UIImagePNGRepresentation(rigPhoto.image!) as NSData?
+                //rig?.photo = UIImagePNGRepresentation(rigPhoto.image!) as NSData?
+              
+                rig?.photoThumb  = UIImagePNGRepresentation(resizeImage(image: rigPhoto.image!, newHeight: 144)!) as NSData?
                 
                 var dueDateString = dateFormatter.string(from: rig?.dueDate! as! Date)
                 appDelegate.saveContext()
@@ -157,7 +175,8 @@ class AddViewController: UIViewController, UINavigationControllerDelegate, UITex
                 rig.dueDate = dueDate as NSDate
                 rig.notify1 = notificationOneDate
                 rig.notify2 = notificationTwoDate
-                rig.photo = UIImagePNGRepresentation(rigPhoto.image!) as NSData?
+                //rig.photo = UIImagePNGRepresentation(rigPhoto.image!) as NSData?
+                rig.photoThumb  = UIImagePNGRepresentation(resizeImage(image: rigPhoto.image!, newHeight: 144)!) as NSData?
                 var dueDateString = dateFormatter.string(from: rig.dueDate! as Date)
                 appDelegate.saveContext()
                 performSegue(withIdentifier: "cancelSegue", sender: nil)
@@ -199,10 +218,11 @@ class AddViewController: UIViewController, UINavigationControllerDelegate, UITex
         // If rig exists Change Button to Update and add Delete Button
         
         if rig != nil {
-           rigPhoto.image = UIImage(data: rig?.photo as! Data)
+           rigPhoto.image = UIImage(data: rig?.photoThumb! as! Data)
             rigDescription.text = rig!.title
             addUpdateButton.setTitle("Update", for: .normal)
-            datePicker.date =  rig!.repackDate as! Date
+            addPhotoButton.setTitle("Update Photo (optional)", for: .normal)
+            datePicker.date =  rig!.repackDate! as Date
             
         } else {
             deleteButton.isHidden = true
@@ -214,7 +234,7 @@ class AddViewController: UIViewController, UINavigationControllerDelegate, UITex
         
     }
     
-    func getDateAndTime() {
+    @objc func getDateAndTime() {
         
         // declare format of date we want to see
         let dateFormatter = DateFormatter()

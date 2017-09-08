@@ -51,8 +51,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 
                 let dueDateString = dateFormatter.string(from: rig.dueDate! as Date)
                 
-                let components = calendar.dateComponents(in: .current, from: rig.notify1 as! Date)
-                let components2 = calendar.dateComponents(in: .current, from: rig.notify2 as! Date)
+                let components = calendar.dateComponents(in: .current, from: rig.notify1! as Date)
+                let components2 = calendar.dateComponents(in: .current, from: rig.notify2! as Date)
                 let newComponents = DateComponents(calendar: calendar, timeZone: .current, month: components.month, day: components.day, hour: 12, minute: 01 )
                 let newComponents2 = DateComponents(calendar: calendar, timeZone: .current, month: components2.month, day: components2.day, hour: 12, minute:02)
                 
@@ -108,14 +108,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         cell.textLabel?.text = rig.title
         cell.detailTextLabel?.numberOfLines = 0; // 0 means 'no limit'
-        
-       
-        
+        rigList.rowHeight = UITableViewAutomaticDimension
+        rigList.estimatedRowHeight = 144
         if rig.dueDate != nil {
             
             let calendar = NSCalendar.current
             let today = Date()
-            let due = rig.dueDate as! Date
+            let due = rig.dueDate! as Date
             
             let startOfTwoWeeks = calendar.date(byAdding: .day, value: 14, to: today as Date)
             
@@ -130,7 +129,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             
             let dueDateString = dateFormatter.string(from: rig.dueDate! as Date)
             
-            cell.imageView?.image = UIImage(data: rig.photo as! Data)
+            cell.imageView?.image = UIImage(data: rig.photoThumb as! Data)
             
             cell.textLabel?.text = rig.title! + "    due on  " + dueDateString
             
