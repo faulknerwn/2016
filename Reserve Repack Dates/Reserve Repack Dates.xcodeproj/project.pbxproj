@@ -102,7 +102,8 @@
 				TargetAttributes = {
 					E3261C2B1E5BC99B008E8F0B = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = GJG5Q5X4VR;
+						DevelopmentTeam = JGHY24SHKF;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -267,7 +268,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GJG5Q5X4VR;
+				DEVELOPMENT_TEAM = JGHY24SHKF;
 				INFOPLIST_FILE = "Reserve Repack Dates/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -281,7 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = GJG5Q5X4VR;
+				DEVELOPMENT_TEAM = JGHY24SHKF;
 				INFOPLIST_FILE = "Reserve Repack Dates/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

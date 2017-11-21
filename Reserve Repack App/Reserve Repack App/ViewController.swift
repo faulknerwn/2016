@@ -105,11 +105,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let rig = rigs[indexPath.row]
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "YYYY-MM-dd"
-        
+        //tableView.isScrollEnabled = true
         cell.textLabel?.text = rig.title
         cell.detailTextLabel?.numberOfLines = 0; // 0 means 'no limit'
         rigList.rowHeight = UITableViewAutomaticDimension
         rigList.estimatedRowHeight = 144
+       rigList.contentSize.height = 2000
+       /* if (rigList.contentSize.height < rigList.frame.size.height) {
+            rigList.isScrollEnabled = false;
+        }
+        else {
+            rigList.isScrollEnabled = true;
+        }*/
         if rig.dueDate != nil {
             
             let calendar = NSCalendar.current

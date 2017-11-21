@@ -99,6 +99,7 @@
 				TargetAttributes = {
 					E3A3302A1DF8F460000FFA03 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = GJG5Q5X4VR;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -262,6 +263,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GJG5Q5X4VR;
 				INFOPLIST_FILE = Strings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leprechaunskydiving.Strings;
@@ -274,6 +276,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GJG5Q5X4VR;
 				INFOPLIST_FILE = Strings/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.leprechaunskydiving.Strings;
